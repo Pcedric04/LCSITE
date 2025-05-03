@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -86,9 +87,6 @@
                         <p>Merci d'avoir accepté les cookies !</p>
                     @else
                         <!-- Afficher le message de consentement aux cookies -->
-                        <p>{{ $cookieConsentConfig['message'] }}</p>
-                        <button class="btn btn-success">{{ $cookieConsentConfig['agree'] }}</button>
-                        <button class="btn btn-danger">{{ $cookieConsentConfig['decline'] }}</button>
                     @endif
 
                 </div>
