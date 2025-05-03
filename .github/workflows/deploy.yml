@@ -1,4 +1,4 @@
-name: Deploy Laravel App
+name: Deploy LC SITE
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.5.4
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVAT_KEY_LC }}
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Deploy via SSH
         run: |
