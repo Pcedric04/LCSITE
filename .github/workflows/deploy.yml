@@ -3,7 +3,7 @@ name: Deploy LC SITE
 on:
   push:
     branches:
-      - main
+      - main # or develop
 
 jobs:
   deploy:
