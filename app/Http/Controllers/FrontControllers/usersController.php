@@ -35,23 +35,23 @@ class usersController extends Controller
            return view('Layouts.LayoutsFrontApp.Users.Login.login',compact('message','post_all','agendas','postsall1'));
         }
 
-    public function login(Request $request)
-        {
-            $this->validate($request, [
-                'nickname' => 'required|string',
-                'password' => 'required|min:4|max:10',
-                ]);
-                $input = $request->all();
-
-                if (Auth::attempt(['nickname' => $input['nickname'], 'password' => $input['password']]) && Auth::user()->hasRole('visiteur'))
-                    {
-                        return redirect()->route('labo.index')->with('success',"Bienvenu sur le site du Laboratoire Citoyennetés");
-                    }
-                    else
-                   {
-                        return redirect()->back()->with('error',"Nous vous prions de bien vouloir vérifier votre nom d\'utilisateur ou votre mot de passe!");
-                   }
-        }
+//     public function login(Request $request)
+//         {
+//             $this->validate($request, [
+//                 'nickname' => 'required|string',
+//                 'password' => 'required|min:4|max:10',
+//                 ]);
+//                 $input = $request->all();
+//
+//                 if (Auth::attempt(['nickname' => $input['nickname'], 'password' => $input['password']]) && Auth::user()->hasRole('visiteur'))
+//                     {
+//                         return redirect()->route('labo.index')->with('success',"Bienvenu sur le site du Laboratoire Citoyennetés");
+//                     }
+//                     else
+//                    {
+//                         return redirect()->back()->with('error',"Nous vous prions de bien vouloir vérifier votre nom d\'utilisateur ou votre mot de passe!");
+//                    }
+//         }
     public function register()
         {
             $message = flashinfos::where('status','=','En ligne')->orderByDesc('id')->get();

@@ -4,6 +4,8 @@ use App\Models\flashinfos;
 use App\Models\posts;
 use App\Models\slides;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Front\usersController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -106,13 +108,12 @@ Route::get('/', function () {
         Route::post('/unlike-post/{id}', [App\Http\Controllers\Front\postsController::class, 'unlikePost'])->name('labo.unlike.post');
 
 
-        use App\Http\Controllers\Front\usersController;
 
         // Route pour afficher le formulaire de connexion
-        Route::get('/user/login', [usersController::class, 'index'])->name('labo.front.users.index');
+        Route::get('/auth/login', [LoginController::class, 'index'])->name('home');
 
         // Route pour traiter la connexion (POST)
-        Route::post('/user/login', [usersController::class, 'login'])->name('labo.front.users.login');
+        Route::post('/auth/login/verify', [LoginController::class, 'login'])->name('labo.users.login');
 
 
 
