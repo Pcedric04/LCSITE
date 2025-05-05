@@ -8,7 +8,7 @@
                 <h1 class="display-5 mb-5"
                     style="color: #ff6902; font-family: 'Lucida Sans', 'Lucida Sans Regular',
                             'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-                    Aucune actualités trouvées
+                    Aucune actualités trouvéess
                 </h1>
             @else
                 <div class="row">
