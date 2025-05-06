@@ -24,7 +24,7 @@
                                 diagnostics techniques plusieurs outils (forums multi-acteurs, radios locales, parrainage
                                 des OSC) pour construire des processus de plaidoyer et d’interpellation sur des enjeux de
                                 gouvernance et de citoyenneté aux échelles locale, nationale et sous-régionale.
-                            </p>
+                            </p>G
                         </div>
                     </div>
                     <div id="social-links" class="mb-2">
