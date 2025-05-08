@@ -20,7 +20,9 @@ jobs:
 
       - name: Deploy via SSH
         run: |
-          ssh -o StrictHostKeyChecking=no -p 2222 ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
+          ssh -vvv -o StrictHostKeyChecking=no -p ${{ secrets.SSH_SERVER_PORT }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
+              echo "Connected!"
+              EOF
             cd ${{ secrets.SERVER_PATH }}
             git pull origin main
             composer install --no-interaction --prefer-dist --optimize-autoloader
