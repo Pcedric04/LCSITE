@@ -37,7 +37,7 @@
                     <p
                         style="text-align: left; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 font-size: 18px;font-weight: 600; margin: 10px 10px;">
-                        Pour construire son influence, Le LC combine aux résultats de recherches de terrain et de
+                        11Pour construire son influence, Le LC combine aux résultats de recherches de terrain et de
                         diagnostics techniques plusieurs outils (forums multi-acteurs, radios locales, parrainage
                         des OSC) pour construire des processus de plaidoyer et d’interpellation sur des enjeux de
                         gouvernance et de citoyenneté aux échelles locale, nationale et sous-régionale.

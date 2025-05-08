@@ -25,7 +25,7 @@
                             <h3 class="dropdown-item-title">
                                 {{ Auth::user()->name}} {{ Auth::user()->surname }}
                             </h3>
-                            <span style="color: #ff6902;text-transform: uppercase; font-size: 12px; ">
+                            <span style="color:rgb(2, 255, 86);text-transform: uppercase; font-size: 12px; ">
                                 {{  Auth::user()->roles()->pluck('name')->implode(', ')}}
                             </span>
                         </div>

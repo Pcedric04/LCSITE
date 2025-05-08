@@ -81,13 +81,20 @@
                         </div>
                     </form>
 
-                    <!-- Afficher la politique de cookies si $cookieConsentConfig est défini -->
+                    <!-- Afficher la politique de cookies si $cookieConsentConfig est défini
                     @if(isset($alreadyConsentedWithCookie) && $alreadyConsentedWithCookie)
-                        <!-- Afficher un message si l'utilisateur a déjà consenti -->
+                         Afficher un message si l'utilisateur a déjà consenti
                         <p>Merci d'avoir accepté les cookies !</p>
                     @else
+<<<<<<< HEAD
+                         Afficher le message de consentement aux cookies
+                        <button class="btn btn-success">{{ $cookieConsentConfig['agree'] }}</button>
+                        <button class="btn btn-danger">{{ $cookieConsentConfig['decline'] }}</button>
+                    @endif -->
+=======
                         <!-- Afficher le message de consentement aux cookies -->
                     @endif
+>>>>>>> f61701b9fa83885d7061f6b0b34db4f2be6a7b00
 
                 </div>
             </div>
